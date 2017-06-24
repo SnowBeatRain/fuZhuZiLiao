@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>文档标题</title>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="author" content="尹学江">
+  <link rel="stylesheet" type="text/css" href="css/globle.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <style type="text/css">
+  .test {
+    position: relative;
+    width: 1000px;
+    height: 600px;
+    background-color: #f3f3f3;
+    margin: 0 auto;
+
+  }
+  
+  .middle {
+    width: 100px;
+    left: 0;
+    right: 0;
+    margin:0 auto;
+    position: absolute;
+    background-color: white;
+    line-height: 30px;
+    top: 50%;
+    transform: translate(0, -50%)
+  }
+  </style>
+</head>
+
+<body>
+  <div class="test">
+    <div class="middle">
+      464f6as4f<br>6as4f
+      464f6as4f<br>6as4f
+      464f6as4f<br>6as4f
+      464f6as4f<br>6as4f
+      464f6as4f<br>6as4f
+    </div>
+  </div>
+</body>
+
+</html>
+<script type="text/javascript">
+// 自执行函数
+// 防止产生全局变量
+(function() {
+  var i = 1;
+  console.log(i)
+})()
+
+// var i = 1;
+// console.log(i)
+
+// 
+jQuery.noConflict();
+(function($) {
+  // 永远相等  
+  console.log($ === jQuery)
+
+})(jQuery)
+</script>

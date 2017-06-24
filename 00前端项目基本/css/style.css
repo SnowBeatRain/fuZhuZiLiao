@@ -1,0 +1,59 @@
+@charset "utf-8";
+.box2 {
+    background-color: #ccc;
+    display: block;
+    width: 810px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.box2 li {
+    float: left;
+    width: 152px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    height: 100px;
+    background-color: #fff;
+}
+
+
+.box2 li a {
+    display: block;
+    width: 152px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+
+.box {
+    background-color: #ddd;
+    width: 820px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.box .fl{
+	width: 400px;
+	height: 100px;
+	background-color: blue;
+}
+.box .fr{
+	width: 400px;
+	height: 100px;
+	background-color: green;
+}
+#nav{
+	height: 80;
+}
+#nav .logo{
+	width: 100px;
+	height: 60px;
+	margin-top: 10px;
+}
+#nav .ad{ position: relative; width: 100px; height: 80px; }
+#nav .ad img{
+	position: absolute;
+	width: 100px;
+	height: 120px;
+	top: -10px;
+}
