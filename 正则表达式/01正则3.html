@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>正则表达式3</title>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="author" content="尹学江">
+</head>
+
+<body>
+</body>
+<script type="text/javascript">
+// 1 '()'用来分组  可以把一组看成一个字符
+// reg.exec(str) 返回值 是一个数组，数组中的第一个值，匹配出来的值，
+// 其它的值，可以分组的值
+
+var reg1 = /(baidu)(sogo)/;
+console.log(reg1.exec('baidusogo'));
+
+// RegExp.$ +num 产生的前提 是执行了正则表达式 exec 或 test都可以
+// RegExp.$ +num 获取的是分组的内容
+console.log(RegExp.$1);
+console.log(RegExp.$2);
+
+var str2 = 'this is11 an 22 3 apple, that444 is55 a ban6ana';
+var reg5 = /([^0-9])(\d)([^0-9])/g;
+
+
+console.log(str2.replace(reg5, '$1' + '0' + '$2$3'));
+var str3 = 'this is an ------ apple, thAt A  B C iS a banana';
+
+var reg6 = /([a-zA-Z-])([a-zA-Z-]*)\b/g;
+// all  代表所有匹配内容一个
+// first 第一个分组的内容
+// other 第二个分组的内容
+var str4 = str3.replace(reg6, function(all, first, other) {
+  // 把匹配内容处理后，返回，把匹配内容替换掉
+  if (all.length == 1) {
+    return all.toLowerCase();
+  } else {
+    return first.toUpperCase() + other.toLowerCase();
+  }
+})
+console.log(str4);
+
+// 2.  贪婪模式  +*
+// 能匹配多少就匹配多少
+
+var reg7 = /a+b/;
+console.log(reg7.exec('aaaaaaaaaaabcdefg'));
+
+// 3.  惰性模式  +?   *?
+var reg8 = /ba*?b/;
+console.log(reg8.exec('baaaaaaaaaaabcdefg'));
+
+var str5 = '8baidu8 8sogo8 8soso8 83608';
+// <b>baidu</b>
+// <b>sogo</b>
+// <b>soso</b>
+// <b>360</b>
+var reg9 = /8(.*?)8/g;
+document.body.innerHTML =  str5.replace(reg9, '<b>$1</b><br>');
+
+// 4. ()捕获性分组 
+// (?:)非捕获性分组
+var reg9 = /8(?:.*?)8/g;
+
+
+// 5. 嵌套分组
+var reg10 = /(a(b(c)))(d)/;
+console.log(reg10.exec('abcdefg'));
+// 数组内容
+// 0：匹配全部abcd
+// 1：第一个分组abc
+// 2：第一个分组的第一个分组bc
+// 3：第一个分组的第一个分组的第一个分组c
+// 4：第二个分组d
+
+
+</script>
+
+</html>

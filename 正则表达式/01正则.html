@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>正则表达式</title>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="author" content="尹学江">
+</head>
+
+<body>
+</body>
+<script type="text/javascript">
+// 一、什么是正则表达式
+// 正则表达式(regular expression) 是一个描述字符串模式的对象。 ECMAScript中的 RegExp 类表示的就是正则表达式。但String和RegExp中都定义了使用正则表达式进行模式匹配和文本检索与替换的函数
+
+// 二、创建正则表达式（两种）
+// 方法1：字面量形式
+var reg = /ab/g;
+// 其中  /ab/ 模式字符串
+// g 模式修饰符
+// g  全局匹配
+// i  不区分大小写
+// m  多行匹配
+console.log(reg);
+
+// 方法2：new + RegExp构造方法 
+var reg2 = new RegExp('ab', 'gim');
+console.log(reg2);
+
+// 三、正则表达式里的方法
+// 1. test()
+// 作用：匹配到则返回真，没有匹配到则返回假
+// 用法：reg.test(str)
+var reg3 = /ab/;
+console.log(reg3.test('abcdefg'));
+
+var phone = /^1[3578]\d{9}$/
+var a  = 15888888888
+console.log(phone.test(a))
+
+// 2. exec()
+// 作用：返回匹配到值的一个数组，如果匹配字符串，则返回字符串的信息数组，没有匹配 返回null
+// 用法：reg.exec(str)
+var reg4 = /ab/i;
+console.log(reg4.exec('bcdeaB'));
+// 注意：并不是返回匹配所有内容组成的数组，而是第一个匹配内容相关信息的一个数组
+
+// 四：字符串中正则表达式的用法
+// 能用到正则表达式的： match() 匹配 , replace() 替换，search() 搜索 spilt() 分割成数组
+var str1 = '我喜欢html5,他也喜欢html5';
+console.log(str1.replace('喜欢', '不喜欢'));
+console.log(str1.replace(/喜欢/g, '不喜欢'));
+
+// 体验两个
+// 把单个的数组前导0
+var str2 = 'this is11 an 22 3 apple, that444 is55 a ban6ana';
+var reg5 = /([^0-9])(\d)([^0-9])/g;
+console.log(str2.replace(reg5, '$1' + '0' + '$2$3'));
+
+var str3 = 'this is an ------ apple, thAt iS a banana';
+
+// 匹配一个不带-单词
+// 单词首字母大写
+var reg6 = /\w+/g;
+
+var str4 = str3.replace(reg6, function(a) {
+  // this t  his   T + his
+  // 把匹配内容处理后，返回，把匹配内容替换掉
+  return a.substring(0, 1).toUpperCase() + a.substring(1).toLowerCase();
+})
+console.log(str4)
+
+var str6 = '朱会东,王帅豪,李海政,张华,李茂林,徐一鸣';
+console.log(str6.split(','));
+
+var str7 = '朱会东，王帅豪,李海政，张华,李茂林;徐一鸣';
+
+console.log(str7.split(','));
+//  | 或者 使用多个分割，分割成一个数组
+console.log(str7.split(/,|，|;/));
+
+var str8 = 'abcdeCDEfgab';
+console.log(str8.match('ab'));
+// 匹配两个连续的大写字母
+console.log(str8.match(/[A-Z]{2}/));
+
+
+</script>
+
+</html>

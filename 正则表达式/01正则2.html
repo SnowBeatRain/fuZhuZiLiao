@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>正则表达式2</title>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="author" content="尹学江">
+</head>
+
+<body>
+</body>
+<script type="text/javascript">
+// 五、获取控制
+// 正则表达式元字符是包含有特殊含义的字符。它们具有特殊功能，可以控制匹配模式的方式。  . * + []  ...
+// 反斜杠，反斜杠后面的元字符将失去它的特殊功能
+// \. 变成原来功能了
+// 1. '\' 可以把原字符 再转化为原来的字符 \\ \? \. \a
+
+// 2.  '.'  代替任意一个非换行字符
+var reg1 = /baidu..../;
+console.log(reg1.exec('baiduabcdefghi'));
+
+// 3. '*'  代表0个，1个或多个  前面的一个字符
+
+var reg2 = /.*b/;
+console.log(reg2.exec('aaaaabcedef'));
+
+// 4. '+' 代表1个或多个  前面的一个字符
+var reg3 = /.+b/;
+console.log(reg3.exec('bcedef'));
+
+// 5. '?' 代表0个，1个 前面的一个字符
+var reg4 = /a.?b/;
+console.log(reg4.exec('bbbbbbba中baaaaa'));
+
+// 6. '{2,4}' 代表2-4 前面的一个字符 （包括2和4）
+// 6. '{2}' 代表2 前面的一个字符
+// 6. '{2,}' 代表2以上 前面的一个字符
+
+
+// 7. '[a-z]'  代表 a-z 任意一个字母
+// 7. '[A-Z]'  代表 A-Z 任意一个字母
+
+// 8. '[0-9]'  代表 0-9 任意一个数字
+
+// 9. '[a-zA-Z0-9]'  代表 任意一个字母或数字
+
+var reg5 = /bai[a-zA-Z0-9]?du/;
+console.log(reg5.exec('bai8du'));
+
+// 10 '^' 一种是[^] 非   取返
+// [^0-9]  非0-9
+
+var reg6 = /[^0-9]+/;
+console.log(reg6.exec('aaaab9bbbccc'));
+// 10 '^' 二种 /^/ 从开始匹配
+var reg6 = /^1[3578][0-9]{9}$/;
+console.log(reg6.test('15738361416'));
+
+// 11 '$'  /$/ 匹配结束位置
+
+// 12 '\w' 等于[a-zA-Z0-9_]  任意一个字母数字下划线
+// 12 '\W' 等于[^a-zA-Z0-9_]  任意一个非字母数字下划线
+
+// 13 '\d' 等于[0-9]  任意一个数字
+// 13 '\D' 等于[^0-9]  任意一个非数字
+
+// 14 ' '一个真实空格  '\s' 匹配一个空格
+var reg7 = /bai\s\s\sdu/;
+console.log(reg7.test('bai   du'));
+
+// 15 '\b' 表示到达边界
+var reg8 = /\bis\b/;
+console.log('this an apple, there is two apple'.replace(reg8, 'are'));
+
+// 16 '|'  或
+var reg9 = /\.(zip|rar|gz)$/;
+var fileName = 'aa.rar';
+if (reg9.test(fileName)) {
+	console.log(fileName + "是一个压缩包文件");
+}else{
+	console.log(fileName + "不是一个压缩包文件");
+}
+
+
+// 验证手机号：
+var phoneReg = /^1[3578]\d{9}$/;
+var phoneReg = /^1(3|5|7|8)\d{9}$/;
+// 验证用户名（6-13必须以字母开头）
+var nameReg = /^[a-zA-Z]\w{5,12}$/;
+// 验证密码（不得小于6位）
+var passwordReg = /^\w{6,}$/;
+// 验证qq号
+var qqReg = /^[1-9]\d{4,9}$/;
+// 验证邮箱
+
+
+</script>
+
+</html>
