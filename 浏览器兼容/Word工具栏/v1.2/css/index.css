@@ -1,0 +1,440 @@
+* {
+	box-sizing: border-box;
+	box-sizing: border-box\9;
+}
+
+body {
+	margin: 0;
+}
+
+.box {
+	display: flex;
+	width: 1013px;
+	height: 132px;
+	*height: 131px;
+	background: #f1f1f1;
+	border-bottom: 1px solid #d5d5d5;
+	font-size: 16px;
+}
+
+.yemian {
+	float: left;
+	width: 182px;
+	*width: 181px;
+	height: 125px;
+	border-right: 1px solid #ddd;
+	text-align: center;
+}
+
+.yemian .top {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	height: 96px;
+	height: 106px\0;
+	height: 106px\9\0;
+	*height: 96px!important;
+	_height: 86px;
+	padding-top: 10px;
+}
+
+.yemian .top .fm,
+.yemian .top .kby,
+.yemian .top .fy {
+	float: left;
+	width: 33%;
+	*width: 33%;
+	height: 100%;
+}
+
+.yemian .top .fm .img {
+	width: 32px;
+}
+
+.yemian .top .kby .img {
+	width: 32px;
+}
+
+.yemian .top .fy .img {
+	width: 37px;
+}
+.yemian .top .fy .name {
+	*margin-left: -1px;
+}
+.yemian .top .name {
+	margin-top: 2px;
+	line-height: 16px;
+}
+
+.yemian .top .fm .openbox {
+	margin-top: 9px;
+	*margin-top: 3px;
+	line-height: 5px;
+	/*background: red;*/
+}
+
+.yemian .top .fm .open {
+	width: 10px;
+	height: 5px;
+}
+
+.yemian .title {
+	margin-top: 9px;
+	margin-top: 1px\9\0;
+	*margin-top: 1px;
+	line-height: 16px;
+	*line-height: 16px;
+	*margin-left: 1px;
+	/*background: red;*/
+}
+
+@media \0screen {
+	.yemian .title {
+		margin-left: 1px;
+	}
+}
+
+.clearfloat {
+	clear: both;
+}
+
+.table {
+	float: left;
+	width: 69px;
+	*width: 68px;
+	height: 125px;
+	*height: 110px;
+	border-right: 1px solid #ddd;
+	text-align: center;
+	padding-top: 15px;
+}
+
+.table .img {
+	width: 42px;
+}
+
+.table .title {
+	margin-top: 3px;
+	line-height: 16px;
+}
+
+.table .openbox {
+	line-height: 5px;
+	margin-top: 9px;
+	*margin-top: 3px;
+}
+
+.table .open {
+	width: 10px;
+	height: 5px;
+}
+
+.table .title1 {
+	margin-top: 14px;
+	*margin-top: 11px;
+	margin-top: 16px\0;
+	line-height: 16px;
+}
+
+@media \0screen {
+	.table .title1 {
+		margin-top: 15px;
+	}
+}
+
+.chatu {
+	width: 322px;
+	height: 100%;
+	float: left;
+	text-align: center;
+}
+
+.chatu .top {
+	width: 100%;
+	height: 92px;
+}
+
+.chatu .top .left {
+	width: 200px;
+	height: 92px;
+	*height: 82px;
+	float: left;
+	padding-top: 10px;
+	
+}
+
+.chatu .top .left .tp {
+	width: 33.2%;
+	height: 100%;
+	float: left;
+}
+
+.chatu .top .left .tp img {
+	width: 45px;
+	*margin-left: 1px;
+}
+
+.chatu .top .left .tp .bt {
+	margin-top: 0px;
+	line-height: 16px;
+	*margin-left: 1px;
+}
+
+.chatu .top .left .ljtp {
+	width: 33.2%;
+	height: 100%;
+	float: left;
+    
+}
+.chatu .top .left .ljtp img {
+	width: 45px;
+	*margin-left: 1px;
+}
+.chatu .top .left .ljtp .bt {
+	*margin-left: 2px;
+}
+
+.chatu .top .left .xz {
+	width: 33.4%;
+	height: 100%;
+	float: left;
+    
+}
+
+.chatu .top .left .xz img {
+	width: 45px;
+	*margin-left: 2px;
+}
+.chatu .top .left .xz .bt {
+	*margin-left: 1px;
+}
+
+.chatu .top .left .xz .openbox {
+	line-height: 5px;
+	margin-top: 7px;
+	*margin-top: 1px;
+}
+
+@media \0screen {
+	.chatu .top .left .xz .openbox {
+		margin-top: 6px;
+	}
+}
+
+.chatu .top .left .xz .open {
+	width: 10px;
+	height: 5px;
+}
+
+.chatu .top .right {
+	width: 122px;
+	height: 92px;
+	*height: 80px;
+	padding-top: 10px;
+	*padding-top: 12px;
+	float: left;
+	
+}
+
+.chatu .top .right div {
+	width: 100%;
+	height: 25.3px;
+	*height: 25px!important;
+	_height: 20px;
+	margin-top: 2px;
+	
+	text-align: left;
+}
+
+.chatu .top .right .smart {
+	*height: 22px;
+	/*background: red;*/
+}
+
+.chatu .top .right .tubiao {
+	*height: 27px;
+	/*background: red;*/
+}
+
+.chatu .top .right .jietu {
+	*height: 27px;
+	*margin-top: 3px;
+}
+
+.chatu .top .right .smart img {
+	width: 24px;
+}
+
+.chatu .top .right .smart span {
+	margin-left: 4px\0;
+}
+
+.chatu .top .right .tubiao img {
+	width: 22px;
+}
+
+.chatu .top .right .tubiao span {
+	margin-left: 5px;
+}
+
+.chatu .top .right .jietu img {
+	width: 24px;
+}
+
+.chatu .top .right .jietu span {
+	margin-left: 4px\0;
+}
+
+.chatu .title {
+	padding-top: 12px;
+	padding-top: 14px\9;
+	_padding-top: 1px;
+}
+
+.jiazai {
+	width: 144px;
+	*width: 122px;
+	height: 125px;
+	*height: 110px;
+	padding: 0 10px;
+	padding-top: 15px;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	float: left;
+}
+
+.jiazai .appstore {
+	width: 100%;
+	height: 26px;
+}
+
+.jiazai .appstore img {
+	width: 22px;
+	float: left;
+}
+
+.jiazai .appstore span {
+	float: left;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.jiazai .items {
+	width: 100%;
+	height: 23px;
+	margin-top: 20px;
+}
+
+.jiazai .items img {
+	width: 22px;
+	float: left;
+}
+
+.jiazai .items span {
+	float: left;
+	margin-top: 4px;
+	margin-left: 5px;
+}
+
+.jiazai .items .open {
+	width: 10px;
+	height: 5px;
+	float: left;
+	margin: 10px 0 0 5px;
+}
+
+.jiazai .title {
+	text-align: center;
+	margin-top: 20px;
+	margin-top: 22px\9;
+}
+
+.meiti {
+	width: 87px;
+	*width: 86px;
+	height: 125px;
+	*height: 115px;
+	padding-top: 10px;
+	text-align: center;
+	border-right: 1px solid #ddd;
+	float: left;
+}
+
+.meiti img {
+	width: 44px;
+}
+
+.meiti .tt {
+	margin-top: 2px;
+	line-height: 16px;
+}
+
+.meiti .title {
+	margin-top: 30px;
+	margin-top: 31px\9;
+	line-height: 16px;
+}
+
+.lianjie {
+	width: 202px;
+	height: 125px;
+	text-align: center;
+	border-right: 1px solid #ddd;
+	float: left;
+}
+
+.lianjie .top {
+	width: 100%;
+	height: 92px;
+	*height: 82px;
+	padding-top: 10px;
+}
+
+.lianjie .top .lj {
+	width: 33.3%;
+	float: left;
+}
+
+.lianjie .top .lj img {
+	width: 48px;
+}
+
+.lianjie .top .lj div {
+	line-height: 16px;
+}
+
+.lianjie .top .sq {
+	width: 33.3%;
+	float: left;
+}
+
+.lianjie .top .sq img {
+	width: 36px;
+}
+
+.lianjie .top .sq div {
+	line-height: 16px;
+	line-height: 17px\9\0;
+	margin-top: 3px;
+}
+
+.lianjie .top .jcyy {
+	width: 33.3%;
+	float: left;
+}
+
+.lianjie .top .jcyy img {
+	width: 45px;
+}
+
+.lianjie .top .jcyy div {
+	line-height: 16px;
+	margin-top: 3px;
+}
+
+.lianjie .title {
+	margin-top: 13px;
+	margin-top: 15px\9;
+	margin-left: 1px;
+	line-height: 16px;
+}

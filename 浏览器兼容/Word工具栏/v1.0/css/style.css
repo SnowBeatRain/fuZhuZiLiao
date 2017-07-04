@@ -1,0 +1,271 @@
+header {
+	display: flex;
+	width: 1013px;
+	height: 132px;
+	background: #f1f1f1;
+	border-bottom: 1px solid #d5d5d5;
+	font-size: 16px;
+}
+
+.yemian {
+	width: 182px;
+	height: 100%;
+}
+
+.yemian> .top {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	padding-top: 10px;
+}
+
+.yemian> .top div {
+	text-align: center;
+}
+
+.yemian> .top div:nth-of-type(1) img {
+	width: 32px;
+}
+
+.yemian> .top div p {
+	margin: 0px 0;
+}
+
+.yemian> .top div:nth-of-type(2) img {
+	width: 32px;
+}
+
+.yemian> .top div:nth-of-type(3) img {
+	width: 37px;
+}
+
+.yemian .top .open,
+.table .open,
+.chatu .top .left .open {
+	width: 10px;
+	height: 5px;
+	background: url(../img/open.png);
+	background-size: 100%;
+	margin: 8px auto;
+}
+
+.yemian> p {
+	text-align: center;
+	margin: 8px 0 0 0;
+}
+
+.table {
+	width: 69px;
+	height: 96%;
+	text-align: center;
+	border-left: 1px solid #d5d5d5;
+	border-right: 1px solid #d5d5d5;
+	padding-top: 13px;
+	box-sizing: border-box;
+}
+
+.table img {
+	width: 42px;
+}
+
+.table div:nth-of-type(1) {
+	margin-top: 2px;
+}
+
+.table p {
+	margin: 17px 0 0 0;
+}
+
+.chatu {
+	width: 322px;
+	height: 100%;
+}
+
+.chatu .top {
+	width: 100%;
+	padding-top: 10px;
+	display: flex;
+}
+
+.chatu .top .left {
+	width: 200px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.chatu .top .left div {
+	text-align: center;
+}
+
+.chatu .top .left div img {
+	width: 65%;
+}
+
+.chatu .top .left div div {
+	margin-top: -2px;
+}
+
+.chatu p {
+	margin: 10px 0 0 0;
+	text-align: center;
+}
+
+.chatu .top .right {
+	width: 123px;
+	height: 86px;
+}
+
+.chatu .top .right> div {
+	width: 100%;
+	height: 23px;
+	margin-bottom: 5px;
+	display: flex;
+	align-items: center;
+}
+
+.chatu .top .right .smart div {
+	width: 26px;
+	height: 20;
+	text-align: center;
+	margin-right: 5px;
+}
+
+.chatu .top .right .smart img {
+	width: 24px;
+	height: 20;
+}
+
+.chatu .top .right .tubiao div {
+	width: 26px;
+	height: 20;
+	text-align: center;
+	margin-right: 5px;
+}
+
+.chatu .top .right .tubiao img {
+	width: 22px;
+	height: 20;
+}
+
+.chatu .top .right .jietu div {
+	width: 26px;
+	height: 20;
+	text-align: center;
+	margin-right: 5px;
+}
+
+.chatu .top .right .jietu img {
+	width: 24px;
+	height: 20;
+	margin-top: 4px;
+}
+
+.chatu .top .right .jietu .open,
+.jiazai .top .myitems .open {
+	width: 10px;
+	height: 5px;
+	background: url(../img/open.png);
+	background-size: 100%;
+	margin: 2px 0 0 5px;
+}
+
+.jiazai {
+	width: 154px;
+	height: 96%;
+	border-left: 1px solid #d5d5d5;
+	border-right: 1px solid #d5d5d5;
+	box-sizing: border-box;
+}
+
+.jiazai .top {
+	padding: 10px;
+}
+
+.jiazai .top> div {
+	display: flex;
+	align-items: center;
+}
+
+.jiazai .top> div:nth-of-type(1) {
+	margin: 10px 0 15px 0;
+}
+
+.jiazai .top .store .icon {
+	width: 22px;
+	height: 26px;
+	background: url(../img/appstore.png);
+	background-size: 100% auto;
+	margin-right: 5px;
+}
+
+.jiazai .top .myitems .icon {
+	width: 22px;
+	height: 23px;
+	background: url(../img/load.png);
+	background-size: 100% auto;
+	margin-right: 5px;
+}
+
+.jiazai p {
+	margin: 13px 0 0 0;
+	text-align: center;
+}
+
+.meiti {
+	width: 87px;
+	height: 96%;
+	border-right: 1px solid #d5d5d5;
+	box-sizing: border-box;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.meiti .top img {
+	width: 44px;
+}
+
+.meiti .top div {
+	margin-top: -3px;
+}
+
+.meiti p {
+	margin: 31px 0 0 0;
+}
+
+.lianjie {
+	width: 202px;
+	height: 96%;
+	text-align: center;
+}
+
+.lianjie .top {
+	padding-top: 10px;
+	padding-right: 9px;
+	display: flex;
+}
+
+.lianjie .top div {
+	width: 100%;
+}
+
+.lianjie .top div:nth-of-type(1) img {
+	width: 48px;
+}
+
+.lianjie .top div:nth-of-type(1) div {
+	margin-top: -4px;
+}
+
+.lianjie .top div:nth-of-type(2) img {
+	width: 36px;
+	margin-top: -1px;
+}
+
+.lianjie .top div:nth-of-type(3) img {
+	width: 45px;
+	margin-top: -1px;
+}
+
+.lianjie p {
+	margin: 29px 0 0 0;
+}

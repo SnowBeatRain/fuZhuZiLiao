@@ -1,0 +1,203 @@
+*{
+    box-sizing: border-box;
+    font-family: "微软雅黑";
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    /*-webkit-user-select: none;*/
+}
+a{
+    text-decoration: none;
+    color: #ff6c00;
+}
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+body>img{
+    width: 100vw;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+.active{
+    background-color: #ff6c00;
+    color: white;
+}
+.active a{
+    color: white;
+}
+header{
+    width: 100%;
+    height: 20.8vw;
+    color: #ff6c00;
+    font-size: 4.4vw;
+}
+.zhiyou{
+    display: flex;
+    justify-content: space-between;
+    font-size: 3vw;
+    height: 10.6vw;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    padding:2.8vw;
+}
+.zhiyou img{
+    height: 5.83vw;
+    cursor: pointer;
+}
+.zhiyou div{
+    height: 8.3vw;
+    cursor: pointer;
+}
+.zhiyou span{
+    display: inline-block;
+    width: 8.3vw;
+    height: 5.4vw;
+    background-image: url(../img/ic1.png);
+    background-size:auto 33.3vw;
+    background-position: 1.4vw 0;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+.zhiyou div:nth-of-type(2) span{
+    background-position: 1.8vw -5.4vw;
+}
+.content li{
+    float: left;
+    width: 20vw;
+    height: 10.2vw;
+    /*margin-left: 3vw;*/
+    text-align: center;
+    font-size: 3.5vw;
+    line-height: 10.2vw;
+}
+/*.content li:nth-of-type(1){
+    width: 11vw;
+}*/
+.fixTop{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    border-bottom: none !important;
+    box-shadow: 0 0.6vw 0.6vw #ccc;
+    animation: fadeIn 1s forwards;
+}
+@keyframes fadeIn{
+    from{
+        transform: translate(0, -20.8vw);
+    }
+    to{
+        transform: translate(0, 0);
+    }
+}
+section{
+    padding: 0 4vw;
+}
+h1,h2{
+    font-size: 4.1vw;
+    color: #060606;
+    text-align: center;
+}
+h1{
+    margin: 3.8vw 0;
+}
+h2{
+    margin:1.8vw 0 0 0;
+}
+
+h3{
+    font-size: 3.5vw;
+    color: #090909;
+    margin:2.25vw 0 2vw 0;
+    line-height: 5.83vw;
+}
+.zhiyou{
+    color: #ff6c00;
+}
+p{
+    font-size: 3.5vw;
+    color: #686868;
+    line-height: 6.5vw;
+}
+.advantage{
+    margin-bottom: 4.1vw;
+}
+.advantage span{
+    color: #090909;
+}
+footer{
+    height: 16.7vw;
+    border-top: 1px solid #f3f3f3;
+    text-align: center; 
+    padding: 3.4vw 0;
+    margin-bottom: 50px;
+}
+footer img{
+    height: 4.7vw;
+}
+footer p{
+    margin: -2vw 0 0 0;
+    font-size: 2.78vw;
+    color: #9b9b9b;
+}
+#mobile_icon_div{
+    background-size: contain !important;
+    right: 0px !important;
+}
+#mobile_ivt_div{
+    /*background-image: url(../img/kefubg.png) !important;*/
+    background-size: contain !important;
+    box-shadow: 0 0 1.67vw #aaa;
+    width: 58.1vw !important;
+    height: 37.6vw !important;
+    margin-left: -29.05vw !important;
+    border-radius: 1.39vw;
+    margin-top: -18.8vw;
+}
+#mobile_ivt_div>div:nth-of-type(1){
+    width: auto !important;
+    height: auto !important;
+    background:none !important; 
+    padding: 1.39vw 5.56vw 0 5.56vw !important;
+    
+}
+#mobile_ivt_div>div:nth-of-type(1)>span:nth-of-type(1){
+    font-size: 4.16vw !important;
+    font-weight: 450 !important;
+    height: auto !important;
+    line-height: 7.78vw !important;;
+}
+#mobile_ivt_div>div:nth-of-type(1)>span:nth-of-type(2){
+    font-size: 3.06vw !important;
+    color: #797979;
+    text-align: justify !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin-top: 0.83vw !important;
+    line-height: 4.72vw !important;
+}
+#mobile_ivt_div>div:nth-of-type(2){
+    width: 100% !important;
+    height: 100% !important;
+}
+#mobile_ivt_div>div:nth-of-type(2)>a:nth-of-type(1){
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    width: 10vw !important;
+    height: 10vw !important;
+}
+#mobile_ivt_div>div:nth-of-type(2)>a:nth-of-type(2){
+    position: absolute !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    height: 10vw !important;
+}

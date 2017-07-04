@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+		    body {
+		    	margin: 0;
+		    }
+			.box {
+				/*
+				属性前缀法(即类内部Hack)：
+				 
+				 *:*color:#000; *号对IE6,IE7都生效
+				 +：+color:#555; +号对IE6--IE10都生效
+				 -：-color:#999; -号只对IE6生效
+				 _: _color:#888; _下划线只对IE6生效
+				 \9：color:red\9;\9对 IE6/IE7/IE8/IE9/IE10都生效
+                 \0：color:blue\0; \0对IE8/IE9/IE10都生效，是IE8/9/10的hack
+                \9\0：color:green\9\0; \9\0 只对IE9/IE10生效，是IE9/10的hack
+                #: #color:pink; #号对IE6/IE7/IE8/IE9/IE10都生效
+                
+				 */
+				
+				width: 700px;
+				width: 300px\9; 
+				*width: 800px;
+				_width: 300px;
+				
+				height: 120px;
+				height: 60px\9;
+				*height: 80px;
+				_height: 100px;
+				color: #FF6900;
+				color: red\9;
+				*color: deepskyblue;
+				_color: #000;
+				/*color:blue;*/
+				
+				background: #aaa;
+				background: #ddd\9;
+				*background: red;
+				_background: #aaa;
+				box-shadow: 0 0 5px #555;
+				box-shadow: 0 0 5px #555\9;
+				*box-shadow: 0 0 5px #555;
+				_box-shadow: 0 0 5px #555;
+				/*border: 1px solid #FF6900;*/
+				/*border: 4px solid red\9;*/
+				/**border: 8px solid deepskyblue;*/
+				/*_border: 12px solid #000;*/
+				text-align: center;
+				line-height: 100px;
+			}
+			
+			/*
+			CSS选择器的Hack
+			
+			*html: 在选择器前面加 *html 表示该样式在IE6以及IE6以下版本浏览器生效
+			:root: 在选择器前面加 :root 表示该样式在IE9及以上版本浏览器生效，对firefox和chrome也生效
+			*+html： 在选择器前面加 *+html 表示该样式仅仅在IE7版本浏览器生效
+			html>body: 在选择器前面加 html>body 表示该样式除IE6之外的所有浏览器都生效
+			
+			 */
+			
+			*html .a {
+				color:#fff;
+			}
+			
+			:root .a {
+				/*color: blue;*/
+			}
+			*+html .a{
+				/*color:#ff6900;*/
+			}
+			html>body .a {
+				color: green;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="box">
+			IE浏览器属性前缀法(即类内部Hack)
+			<!-- /**/: color/**/: red; /**/对IE6--IE11及firefox和chrome都生效 -->
+		</div>
+		<!--IE条件注释法(即HTML条件注释Hack)-->
+			<!--[if IE]>
+			<p>所有IE浏览器显示</p>
+			<![endif]-->
+			
+			<!--[if IE 7]>
+			<p>IE7浏览器显示,数字可以改 ，比如改成8，就是IE8浏览器显示</p>
+			<![endif]-->
+			
+			<!--[if gte IE 6]>
+			<p>IE6以上(包括)浏览器显示,数字可以改 ，比如改成7，就是IE7以上(包括)浏览器显示</p>
+			<![endif]-->
+			
+			<!--[if ! IE 8]>
+			<p>非IE8浏览器显示,数字可以改 ，比如改成9，就是非IE9浏览器显示</p>
+			<![endif]-->
+			
+			<!--[if !IE]>
+			<p>非IE浏览器显示</p>
+			<![endif]-->
+		
+		<p class="a">用hack解决IE浏览器的兼容问题</p>
+		
+	</body>
+
+</html>

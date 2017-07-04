@@ -1,0 +1,142 @@
+header {
+    height: 10.5vw;
+}
+
+
+/*轮播图*/
+#banner img{
+    display: block;
+    width: 100vw;
+}
+#banner{
+    overflow: hidden;
+    position: relative;
+}
+#imgs{
+    position: relative;
+    left: 0;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#dots{
+    position: absolute;
+    bottom: 3vw;
+    left: 35vw;
+    width: 30vw;
+    height: 2vw;
+    display: flex;
+    justify-content: space-between;
+}
+#dots li{
+    width: 2vw;
+    height: 2vw;
+    border: 1px solid #fff;
+    /*background: #fff;*/
+    border-radius: 50%;
+}
+#dots li.ban_dots_active{
+    background: #fff;
+}
+
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: -5px;
+}
+
+.main a {
+    display: inline-block;
+    width: 33.33333%;
+    height: 28.9vw;
+    text-align: center;
+    padding: 6.9vw 0;
+    font-size: 3vw;
+    color: #4d4d4d;
+    border-right: 1px solid #f5f5f5;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.main a:nth-of-type(3n),
+.main a:last-child {
+    border-right: none;
+}
+
+.main span {
+    width: 11vw;
+    height: 11vw;
+    display: block;
+    background-image: url(../img/index.jpg);
+    background-origin: padding-box;
+    background-position: -11.1vw -6.1vw;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    background-size: 100vw auto;
+}
+
+.main a:nth-of-type(2) span {
+    background-position: -44.5vw -6.1vw;
+}
+
+.main a:nth-of-type(3) span {
+    background-position: -77.8vw -6.1vw;
+}
+
+.main a:nth-of-type(4) span {
+    background-position: -11.1vw -34.8vw;
+}
+
+.main a:nth-of-type(5) span {
+    background-position: -44.5vw -34.8vw;
+}
+
+.main a:nth-of-type(6) span {
+    background-position: -77.8vw -34.8vw;
+}
+
+.main a:nth-of-type(7) span {
+    background-position: -11.1vw -64.2vw;
+    ;
+}
+
+.main a:nth-of-type(8) span {
+    background-position: -44.5vw -64.2vw;
+}
+
+.main a:nth-of-type(9) span {
+    background-position: -77.8vw -64.2vw;
+}
+
+.main a:nth-of-type(10) span {
+    background-position: -19.1vw -92.8vw;
+}
+
+.main a:nth-of-type(11) span {
+    background-position: -70.1vw -92.8vw;
+}
+
+.main a:nth-of-type(12) span {
+    background-position: -19.1vw -121.4vw;
+}
+
+.main a:nth-of-type(13) span {
+    background-position: -70.1vw -121.4vw;
+}
+
+.main a:nth-of-type(10) {
+    width: 50vw;
+}
+
+.main a:nth-of-type(11) {
+    width: 50vw;
+}
+
+.main a:nth-of-type(12) {
+    width: 50vw;
+}
+
+.main a:nth-of-type(13) {
+    width: 50vw;
+}
